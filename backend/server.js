@@ -35,6 +35,13 @@ fastify.post("/content", async (request, reply) => {
   }
 });
 
+// an endpoint to update content by id
+fastify.put("/content/:id", async (request, reply) => {
+  const id = request.params.id;
+  const data = await DataModel.findByIdAndUpdate(id, request.body);
+  reply.send(data);
+});
+
 // an endpoint that gets content by id
 fastify.get("/content/:id", async (request, reply) => {
   const id = request.params.id;

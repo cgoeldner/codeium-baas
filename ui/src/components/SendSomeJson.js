@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SendSomeJson.css";
 
 function SendSomeJson() {
   const [formData, setFormData] = useState({});
@@ -32,20 +33,40 @@ function SendSomeJson() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input type="text" name="name" onChange={handleInputChange} />
-      </label>
-      <label>
-        Age:
-        <input type="number" name="age" onChange={handleInputChange} />
-      </label>
-      <label>
-        Email:
-        <input type="email" name="email" onChange={handleInputChange} />
-      </label>
-      <button type="submit">Submit</button>
+    <form onSubmit={handleSubmit} className="send-some-json">
+      <div className="form-group">
+        <label htmlFor="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          className="form-control"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          className="form-control"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          className="form-control"
+          onChange={handleInputChange}
+        />
+      </div>
+      <button type="submit" className="btn btn-primary">
+        Submit
+      </button>
     </form>
   );
 }

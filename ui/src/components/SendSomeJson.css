@@ -1,0 +1,41 @@
+.send-some-json {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .form-control {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  .btn {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0069d9;
+  }
+  
