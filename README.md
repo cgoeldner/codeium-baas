@@ -2,9 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Create docker mongodb container
+
+1. Inside the folder backend create a folder `data`
+2. run `docker build -t baas-mongodb .`
+3. run `docker run -dp 127.0.0.1:27017:27017 baas-mongodb`
+
 ## Available Scripts
 
-In the project directory, you can run:
+In the ui directory, you can run:
 
 ### `npm start`
 
