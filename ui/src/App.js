@@ -14,7 +14,7 @@ const items = [
     content: "Item 2",
   },
   {
-    lol: "item-3",
+    id: "item-3",
     content: "Item 3",
   },
 ];
